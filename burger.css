@@ -49,10 +49,10 @@
     font-size: 1.5rem;
 }
 
- /* @font-face {
+   @font-face {
     font-family: 'Ovsyanka Press';
     src: url("../fonts/Ovsyanka-press.ttf") format('truetype');
-}  */
+}  
 
 .main {
     position: relative;
