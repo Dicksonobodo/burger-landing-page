@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.full {
+    background-image: url(".//img/hero-bg.jpg");
+    /* background-color: black; */
+}
+
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    text-transform: capitalize;
+}
+
+.one:hover {
+    color: orange;
+}
+
+.two:hover {
+    color: orange;
+}
+
+.three:hover {
+    color: orange;
+}
+
+.four:hover {
+    color: orange;
+}
+
+.material-symbols-outlined:hover {
+    color: orange;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.5rem;
+}
+
+ /* @font-face {
+    font-family: 'Ovsyanka Press';
+    src: url("../fonts/Ovsyanka-press.ttf") format('truetype');
+}  */
+
+.main {
+    position: relative;
+    color: white;
+    font-family: 'Ovsyanka Press', sans-serif;
+    text-transform: capitalize;
+}
+
+.p1 {
+    font-size: 70px;
+}
+
+.p2 {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+
+.line-colour {
+    color: orange;
+}
+.btn {
+    background-color: orange;
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* width: 100px; */
+}
+
+.p3 {
+    font-family: 'Ovsyanka Press', sans-serif;
+    text-transform: capitalize;
+    color: orange;
+    font-size: 50px;
+}
+
+.main {
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+.mainn {
+    display: flex;
+    gap: 6rem;
+}
+
+.rotate {
+    position: absolute;
+    right: 0;
+    /* left: 655px;
+    top: 175px; */
+}
+
+/* .icon {
+    position: relative;
+} */
+.p1,.p2 {
+    margin-bottom: 30px;
+}
+.sec3 {
+    margin-left: 80px;
+    margin-bottom: 70px;
+}
+
+@keyframes swipeIn {
+    0% {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.p1, .p2, .p3 {
+    opacity: 0;
+    animation: swipeIn 2s ease-in-out forwards;
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img {
+    animation: upAndDown 2.5s ease-in-out infinite;
+}
