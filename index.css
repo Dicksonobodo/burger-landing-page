@@ -175,6 +175,10 @@
         gap: 2rem;
         padding: 1rem 0;
     }
+    @font-face {
+        font-family: 'Ovsyanka Press';
+        src: url("../fonts/Ovsyanka-press.ttf") format('truetype');
+    }
 
     .hamburger {
         display: flex;
