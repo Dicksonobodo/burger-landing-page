@@ -5,6 +5,7 @@
 
 .full {
     background-image: url(".//img/hero-bg.jpg");
+    height: 100vh;
 }
 
 .navbar {
@@ -174,10 +175,6 @@
         text-align: center;
         gap: 2rem;
         padding: 1rem 0;
-    }
-    @font-face {
-        font-family: 'Ovsyanka Press';
-        src: url("./font/Ovsyanka-press.ttf") format('truetype');
     }
     .full {
         height: 100%;
