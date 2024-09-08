@@ -1,19 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .full {
     background-image: url(".//img/hero-bg.jpg");
-    /* background-color: black; */
 }
 
 .navbar {
     color: white;
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    padding-top: 20px;
     text-transform: capitalize;
 }
 
@@ -40,6 +38,7 @@
 .sec1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .list {
@@ -49,10 +48,10 @@
     font-size: 1.5rem;
 }
 
-   @font-face {
+@font-face {
     font-family: 'Ovsyanka Press';
     src: url("../fonts/Ovsyanka-press.ttf") format('truetype');
-}  
+}
 
 .main {
     position: relative;
@@ -80,7 +79,6 @@
     padding: 1rem;
     border: 1px solid black;
     border-radius: 5px;
-    /* width: 100px; */
 }
 
 .p3 {
@@ -102,20 +100,18 @@
 
 .rotate {
     position: absolute;
-    right: 0;
-    /* left: 655px;
-    top: 175px; */
+    right: 70px;
 }
 
-/* .icon {
-    position: relative;
-} */
-.p1,.p2 {
+
+.p1,
+.p2 {
     margin-bottom: 30px;
 }
 .sec3 {
     margin-left: 80px;
-    margin-bottom: 70px;
+    padding-bottom: 115px;
+    height: 100%;
 }
 
 @keyframes swipeIn {
@@ -129,7 +125,9 @@
     }
 }
 
-.p1, .p2, .p3 {
+.p1,
+.p2,
+.p3 {
     opacity: 0;
     animation: swipeIn 2s ease-in-out forwards;
 }
@@ -150,4 +148,84 @@
 
 .img {
     animation: upAndDown 2.5s ease-in-out infinite;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+    .list {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 2rem;
+        padding: 1rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .navbar>div {
+        display: flex;
+        align-items: center;
+    }
+    .nav-active {
+        display: flex;
+    }
+    .img-icon {
+        width: 45%;
+    }
+    .logo {
+        display: flex;
+        gap: 1rem;
+    }
+    .p1,
+    .p2,
+    .p3 {
+        font-size: 25px;
+    }
+    .main {
+        margin-left: 40px;
+    }
+
+    .p3 {
+        text-align: center;
+    }
+    .sec3 {
+        margin-top: 30px;
+        margin-left: 20px;
+        padding-bottom: 115px;
+        height: 100%;
+    }
+    .img {
+        margin-top: 30px;
+    }
+    .rotate {
+        position: absolute;
+        left: 140px;
+        width: 80px;
+    }
+    .navbar {
+        padding: 25px;
+    }
+    .main {
+        margin-top: 40px;
+    }
+    .btn {
+        padding: 7px;
+    }
 }
