@@ -177,9 +177,11 @@
     }
     @font-face {
         font-family: 'Ovsyanka Press';
-        src: url("../fonts/Ovsyanka-press.ttf") format('truetype');
+        src: url("./font/Ovsyanka-press.ttf") format('truetype');
     }
-
+    .full {
+        height: 100%;
+    }
     .hamburger {
         display: flex;
     }
