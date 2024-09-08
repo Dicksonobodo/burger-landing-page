@@ -51,7 +51,7 @@
 
 @font-face {
     font-family: 'Ovsyanka Press';
-    src: url("../fonts/Ovsyanka-press.ttf") format('truetype');
+    src: url("./font/Ovsyanka-press.ttf") format('truetype');
 }
 
 .main {
@@ -175,9 +175,6 @@
         text-align: center;
         gap: 2rem;
         padding: 1rem 0;
-    }
-    .full {
-        height: 100%;
     }
     .hamburger {
         display: flex;
